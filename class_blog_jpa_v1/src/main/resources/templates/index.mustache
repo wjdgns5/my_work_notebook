@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.mustache</title>
+</head>
+<body>
+    <span>
+        여기 폴더 위치는 어떻게 될까요?
+    </span>
+
+    <span>
+        <p>
+            안녕하세요 저의 이름은 {{#name}} <b>{{name}}</b> {{/name}}
+                                {{^name}} <b>No Name</b> {{/name}}
+            입니다.
+
+            <br>
+
+            저의 나이는 {{#age}} <b>{{age}}살</b> {{/age}}
+                     {{^age}} <b>No Age</b> {{/age}}
+            이며,
+            
+            이메일 주소는 {{#email}} <b style="color: aqua;">{{{email}}}</b> {{/email}}
+                        {{^email}} <b>No Email</b> {{/email}}
+            이고,
+
+            <br>
+
+            저의 비밀번호는 {{#password}} <b style="color: violet;">{{password}}</b> {{/password}}
+                          {{^email}} <b>No Password</b> {{/email}}
+            입니다.
+        </p>
+
+    </span>
+    
+</body>
+</html>

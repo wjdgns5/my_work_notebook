@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, Page</title>
+</head>
+<body>
+    <h1>Hello, mustache</h1>
+    <p>저의 이름은 {{name}} 입니다.</p>
+    <p>{{name}}의 나이는 {{age}} 입니다.</p>
+    {{^notice}}
+        <p>공지 없음</p>
+    {{/notice}}
+
+    {{#keyword}}
+        {{.}}
+    {{/keyword}}
+
+</body>
+</html>
